@@ -7,15 +7,18 @@ body{
     background-color: #09090b;
     font-family: 'Sono';
 }
-.container{
-    /* padding: 100px; */
-   /* background-color: red; */
-   /* width: 100%; */
-
-    
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.head{
+ color: #073f1e;
+ font-size: 30px;
+ font-weight: 600;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ margin-top: 45px;
+ padding: 10px;
+}
+.head:hover{
+    color: #20E20C;
 }
 .box{
     background-color: #27272a;
@@ -51,10 +54,14 @@ li{
 }
 input{
     margin-left: 80px;
-}
-/* @media(max-widht:1300px){ */
+} 
 
-/* } */
+/* Add media query to make responsive */
+@media(max-width:750px){
+    li{
+        grid-template-columns: 1fr;
+    }
+}
 .box1{
     display: flex;
     align-items: center;
@@ -77,6 +84,16 @@ input{
     }
 label:hover{
     color: #20E20C;
+}
+@media(max-width:670px){
+    .box1{
+        display: grid;
+        grid-template-columns: 200px;
+        row-gap: 0;
+    }
+    .login{
+        margin-bottom: 0px;
+    }
 }
 input{
     background-color: #1fca66 ;
