@@ -27,7 +27,7 @@ body{
     width: 80%;
     margin-top: 12vh;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px  #073f1e ;
+    box-shadow: 15px 20px 25px  #073f1e ;
     border-color: #14532d;
 }
 .sign{
@@ -79,6 +79,7 @@ input{
     transform:scale(110%) rotate(-2deg);
     background-color: #20E20C;
     border: none;
+    color: inherit;
 
 
     }
@@ -111,7 +112,7 @@ input::placeholder{
 }
 .sourcelink,
 .sourcelink:visited{
-    color: white;
+    color: #20E20C;
     text-decoration: none;
     transition: 0.3s;
 }

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Sono&family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: #09090b;
+    font-family: 'Sono';
+    color: white;
+}
+
+.login{
+    background-color: #27272a;
+    display :flex ;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0 80px;
+    margin-top:160px;
+    padding: 40px 50px;
+    box-shadow:#073f1e 15px 10px 20px;
+    border-radius: 10px;
+}
+@media(max-width:450px){
+    .login{
+        align-items: flex-end;
+    }
+}
+li{
+    display: grid;
+    grid-template-columns: 100px 20vw;
+    column-gap: 20px;
+}
+@media(max-width:960px){
+    
+    li{
+        grid-template-columns: 200px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    span{
+        font-size: 14px;
+    }
+}
+label:hover{
+    color: #20E20C;
+}
+input{
+    margin-bottom: 9%;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+.sourcelink{
+    color: #20E20C;
+    text-decoration: none;
+}
+.sourcelink:hover,
+.sourcelink:active{
+    color: rgb(45, 202, 92);
+    transition: 0.3s;
+}
+button{
+    padding: 0 28px 2px;
+    border: none;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color:#20E20C;
+    transform: scale(110%) rotate(-2deg);
+    color: inherit;
+}
